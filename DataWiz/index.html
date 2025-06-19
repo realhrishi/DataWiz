@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz Pro - Analytics & Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Enhanced Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="loader-counter" id="loaderCounter">0%</div>
+            <p class="loader-text">Loading Experience...</p>
+        </div>
+        <div class="loader-l-shape" id="loaderLShape">
+            <div class="l-vertical"></div>
+            <div class="l-horizontal"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo ripple-hover">
+                <h2>DataWiz</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link ripple-hover">Home</a></li>
+                <li><a href="#about" class="nav-link ripple-hover">About</a></li>
+                <li><a href="#services" class="nav-link ripple-hover">Services</a></li>
+                <li><a href="#portfolio" class="nav-link ripple-hover">Portfolio</a></li>
+                <li><a href="#customers" class="nav-link ripple-hover">Customers</a></li>
+                <li><a href="#contact" class="nav-link ripple-hover">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle ripple-hover" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title ripple-hover">Transform Data Into <span class="highlight">Insights</span></h1>
+                <p class="hero-subtitle">Unlock the power of your data with our advanced analytics platform. Make informed decisions with beautiful visualizations and real-time insights.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary ripple-btn ripple-hover">Get Started</button>
+                    <button class="btn btn-secondary ripple-btn ripple-hover">Watch Demo</button>
+                </div>
+            </div>
+            <div class="hero-image ripple-hover">
+                <img src="graph.png" alt="Analytics Dashboard" class="parallax-element" data-speed="0.5">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title ripple-hover">About Our Platform</h2>
+                <p class="section-subtitle">Empowering businesses with data-driven solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="ripple-hover">Why Choose DataWiz?</h3>
+                    <p>We specialize in transforming complex data into actionable insights. Our platform combines cutting-edge analytics with intuitive design to help businesses make smarter decisions.</p>
+                    <ul class="feature-list">
+                        <li class="ripple-hover">Real-time data processing</li>
+                        <li class="ripple-hover">Interactive visualizations</li>
+                        <li class="ripple-hover">Advanced analytics tools</li>
+                        <li class="ripple-hover">Seamless integrations</li>
+                    </ul>
+                </div>
+                <div class="about-image ripple-hover">
+                    <img src="stats.png" alt="Statistics" class="parallax-element" data-speed="0.3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title ripple-hover">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for your data needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card popup-element ripple-hover">
+                    <div class="service-icon">📊</div>
+                    <h3>Data Analytics</h3>
+                    <p>Advanced statistical analysis and predictive modeling to uncover hidden patterns in your data.</p>
+                </div>
+                <div class="service-card popup-element ripple-hover">
+                    <div class="service-icon">📈</div>
+                    <h3>Business Intelligence</h3>
+                    <p>Transform raw data into meaningful insights with our comprehensive BI solutions.</p>
+                </div>
+                <div class="service-card popup-element ripple-hover">
+                    <div class="service-icon">🎯</div>
+                    <h3>Custom Dashboards</h3>
+                    <p>Tailored visualization dashboards that provide real-time insights for your specific needs.</p>
+                </div>
+                <div class="service-card popup-element ripple-hover">
+                    <div class="service-icon">🔄</div>
+                    <h3>Data Integration</h3>
+                    <p>Seamlessly connect and synchronize data from multiple sources and platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title ripple-hover">Our Work</h2>
+                <p class="section-subtitle">Showcasing successful data transformations</p>
+            </div>
+            
+            <!-- Carousel -->
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide active">
+                        <div class="portfolio-item ripple-hover">
+                            <img src="cards.png" alt="Portfolio Item 1">
+                            <div class="portfolio-content">
+                                <h3>E-commerce Analytics</h3>
+                                <p>Comprehensive sales dashboard with real-time metrics and predictive analytics for a major retail client.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="portfolio-item ripple-hover">
+                            <img src="graph.png" alt="Portfolio Item 2">
+                            <div class="portfolio-content">
+                                <h3>Financial Reporting</h3>
+                                <p>Advanced financial analytics platform with automated reporting and risk assessment tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="portfolio-item ripple-hover">
+                            <img src="stats.png" alt="Portfolio Item 3">
+                            <div class="portfolio-content">
+                                <h3>Healthcare Insights</h3>
+                                <p>Patient data visualization system helping healthcare providers improve treatment outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev ripple-hover" id="prevBtn">‹</button>
+                    <button class="carousel-btn next ripple-hover" id="nextBtn">›</button>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active ripple-hover" data-slide="0"></span>
+                    <span class="indicator ripple-hover" data-slide="1"></span>
+                    <span class="indicator ripple-hover" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section id="customers" class="customers section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title ripple-hover">What Our Customers Say</h2>
+                <p class="section-subtitle">Trusted by industry leaders worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card popup-element ripple-hover">
+                    <div class="testimonial-content">
+                        <p>"DataWiz transformed how we understand our business. The insights we've gained have directly contributed to a 40% increase in revenue."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar ripple-hover">JS</div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <span>CEO, TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card popup-element ripple-hover">
+                    <div class="testimonial-content">
+                        <p>"The real-time dashboards have revolutionized our decision-making process. We can now respond to market changes instantly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar ripple-hover">MJ</div>
+                        <div class="author-info">
+                            <h4>Maria Johnson</h4>
+                            <span>CTO, InnovateLab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card popup-element ripple-hover">
+                    <div class="testimonial-content">
+                        <p>"Outstanding platform with exceptional support. The custom analytics solutions exceeded our expectations completely."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar ripple-hover">RW</div>
+                        <div class="author-info">
+                            <h4>Robert Wilson</h4>
+                            <span>Director, DataFlow Inc</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title ripple-hover">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your data? Let's talk.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="ripple-hover">Contact Information</h3>
+                    <div class="contact-item ripple-hover">
+                        <span class="contact-icon">📧</span>
+                        <span>hello@DataWiz.com</span>
+                    </div>
+                    <div class="contact-item ripple-hover">
+                        <span class="contact-icon">📞</span>
+                        <span>+91 8766204806</span>
+                    </div>
+                    <div class="contact-item ripple-hover">
+                        <span class="contact-icon">📍</span>
+                        <span>7, Data Street, Bat City,</span>
+                    </div>
+                </div>
+                <form class="contact-form ripple-hover">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="ripple-hover" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" class="ripple-hover" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" class="ripple-hover" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple-btn ripple-hover">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="ripple-hover">DataWiz</h3>
+                    <p>Transforming data into actionable insights for businesses worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="ripple-hover">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="ripple-hover">Home</a></li>
+                        <li><a href="#about" class="ripple-hover">About</a></li>
+                        <li><a href="#services" class="ripple-hover">Services</a></li>
+                        <li><a href="#contact" class="ripple-hover">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="ripple-hover">Services</h4>
+                    <ul>
+                        <li><a href="#" class="ripple-hover">Data Analytics</a></li>
+                        <li><a href="#" class="ripple-hover">Business Intelligence</a></li>
+                        <li><a href="#" class="ripple-hover">Custom Dashboards</a></li>
+                        <li><a href="#" class="ripple-hover">Data Integration</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DataWiz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
