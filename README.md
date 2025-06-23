@@ -1,2 +1,2 @@
 # DataWiz
-IIT Bhubaneshwar Hackathon (ROUND-1) Project
+IIT Bhubaneshwar Hackathon Project
